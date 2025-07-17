@@ -28,16 +28,22 @@ EMAIL_TO=hr@palmmind.com
 ```
 
 ### Option 1: Run Locally:
-1. Install dependencies:
+
+1. Create virtual environment:
+```bash
+python -m venv env
+```
+
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-
-3. Or run locally:
+3. Run locally:
 ```bash
 uvicorn main:app --reload
 ```
+
 ### Option 2: Run with Docker:
 1. Run with Docker:
 ```bash
@@ -57,3 +63,9 @@ docker-compose up
 
 ### Health Check
 - `GET /api/v1/health` - System health status
+
+**Proper Details of API endpoints can be found on SwaggerUI:**
+```
+http://localhost:8000/docs#/
+```
+Thank you!
