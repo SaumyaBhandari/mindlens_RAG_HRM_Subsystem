@@ -1,22 +1,5 @@
 # RAG Backend System
-
-A comprehensive backend system with RESTful APIs for document processing, vector storage, and RAG-based querying with agentic capabilities.
-
-## Features
-
-### API 1: Document Processing
-- File upload support (.pdf, .txt)
-- Multiple chunking strategies (recursive, semantic, custom)
-- Multiple embedding models (SentenceTransformer, OpenAI)
-- Vector storage in Qdrant
-- Metadata storage in PostgreSQL
-
-### API 2: RAG Agent System
-- LangChain-based agentic system
-- Memory layer with Redis
-- Multiple similarity search algorithms
-- Interview booking with email notifications
-- Tool reasoning capabilities
+A backend system with RESTful APIs for document processing, vector storage, and RAG-based querying with agentic capabilities.
 
 ## Architecture
 
@@ -24,14 +7,13 @@ A comprehensive backend system with RESTful APIs for document processing, vector
 - **Vector Database**: Qdrant
 - **Relational Database**: PostgreSQL
 - **Memory/Cache**: Redis
-- **Embeddings**: SentenceTransformer, OpenAI
+- **Embeddings**: Gemini, Sentence Transformer
 - **Agent Framework**: LangChain
 - **Email**: SMTP (Gmail)
 
 ## Setup
-
 Set up environment variables in `.env`
-`.env
+```.env
 DATABASE_URL=postgresql://username:password@localhost/rag_db
 REDIS_URL=redis://localhost:6379
 QDRANT_URL=http://localhost:6333
@@ -42,8 +24,8 @@ SMTP_PORT=587
 SMTP_USERNAME=s
 SMTP_PASSWORD=
 EMAIL_FROM=
-EMAIL_TO=trishnakc94@gmail.com
-`
+EMAIL_TO=hr@palmmind.com
+```
 
 ### Option 1: Run Locally:
 1. Install dependencies:
