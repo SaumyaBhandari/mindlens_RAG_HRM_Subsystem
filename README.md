@@ -30,13 +30,27 @@ A comprehensive backend system with RESTful APIs for document processing, vector
 
 ## Setup
 
+Set up environment variables in `.env`
+`.env
+DATABASE_URL=postgresql://username:password@localhost/rag_db
+REDIS_URL=redis://localhost:6379
+QDRANT_URL=http://localhost:6333
+OPENAI_API_KEY=
+GEMINI_API_KEY=
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USERNAME=s
+SMTP_PASSWORD=
+EMAIL_FROM=
+EMAIL_TO=trishnakc94@gmail.com
+`
+
 ### Option 1: Run Locally:
 1. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Set up environment variables in `.env`
 
 3. Or run locally:
 ```bash

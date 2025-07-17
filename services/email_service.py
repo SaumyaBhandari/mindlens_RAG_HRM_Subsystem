@@ -57,22 +57,27 @@ class EmailService:
             print("No team email recipients configured. Skipping team notification.")
             return
 
-        subject = f"New Interview Booking - {full_name}"
+        subject = f"New Interview Scheduled, and Task Completion Email - {full_name}"
         body = f"""
                 Dear Interviewer,
 
-                A new interview has been booked with the following details:
+                The candidate {full_name} has completed the task assigned to him.
+                Here is the link of github where the task has been completed:
+                https://github.com/SaumyaBhandari/mindlens_RAG_HRM_Subsystem
 
+                A new interview has been booked with the following details:
+                
                 Candidate Name: {full_name}
                 Candidate Email: {email}
                 Interview Date: {interview_date}
                 Interview Time: {interview_time}
 
-                Please add this to your calendar and prepare accordingly.
+                Please make some adjustments according to your needs, and you can send him an email
+                invitation for his interview as a Senior ML Engineer Role.
 
                 Best regards,
-                RAG Backend System
-            """
+                Saumya Bhandary's Palmmind's RAG System
+                """
 
         await self._send_email(email, subject, body)
 
