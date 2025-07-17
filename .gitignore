@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+# specific to Poetry
+.venv
+
+# Editor/IDE specific files
+.vscode/ # VS Code
+.idea/   # PyCharm
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.bak
+.DS_Store # macOS specific
+
+# Test-related caches
+.pytest_cache/
+
+# Environment variables file
+.env
+*.env # Catch other variations like .env.local, .env.development etc.
+
+# Database files
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Uploaded files / generated data
+data/
+uploads/
+*.pdf 
+*.txt
+
+# Jupyter Notebook files
+.ipynb_checkpoints
+
+# Miscellaneous
+*.jsonl
+*.pkl
+*.bin
+
+# Distribution and packaging
+dist/
+build/
+*.egg-info/
+
+
+startup.sh

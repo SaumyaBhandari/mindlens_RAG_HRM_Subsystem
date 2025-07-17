@@ -1,0 +1,48 @@
+# Python cache directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.swp
+*.bak
+
+startup.sh
+
+# Test-related directories
+.pytest_cache/
+tests/
+
+# Configuration files that might contain sensitive data or are environment-specific
+.env
+
+# Local database files
+*.sqlite3
+*.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Uploaded files or data that should not be part of the build
+data/
+uploads/
+
+# Docker-specific files that don't need to be inside the image
+docker-compose.yml
+Dockerfile
+startup.sh # If this is only for container startup, not part of the app itself.
+
+# Ignore any distribution archives
+dist/
+build/
+*.egg-info/
